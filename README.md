@@ -10,7 +10,7 @@ Here we try to design a system that solves perhaps the most cliche MPC problem, 
 Here I have tried to use a different type of cost function, which I've found is easier to converge even with relatively simple optimization algorithms. In fact in the c++ code of this project the optimizer is a simple gradient descent algorithm where the gradient is calculated numerically. In the python part of the codebase, the optimizer used is a global optimization algorithm (dual annealing from the scipy optimize package). 
 
 The cost function is defined as :<br />
-![alt text](https://github.com/NonStopEagle137/Model-Predictive-Control-cpp-python/blob/main/Images/general_cost.png?raw=true)
+![alt text](https://github.com/NonStopEagle137/Model-Predictive-Control-cpp-python/blob/main/Images/general_cost.png)
 <br />
 where alpha controls the depth of the global minima and beta controls the overall influence/spread of the local minima. The value of alph can be positive or negative depending upon the desired action by the agent. For instance, a positive value of alpha generates a localised peak in the function landscape and a negative alpha generates a trough in the the functional landscape.<br />
 gamma is the euclidean distance from the obstacle/target to the current position. <br />
