@@ -17,7 +17,9 @@ gamma is the euclidean distance from the obstacle/target to the current position
 ![alt text](https://github.com/NonStopEagle137/Model-Predictive-Control-cpp-python/blob/main/Images/gamma.png?raw=true)
 <br />
 This Cost function works well because of it's excellent quality of superimposition. Obstacles can be denoted as localised peaks in a global trough with the target position as the global minima.
-
+# Reference Functional Landscape in 2-D
+Following is the functional landscape created using the cost function. The upward peak denotes the obstacle which is in an overall inward trough which leads to the global minima. <br />
+![alt text](https://github.com/NonStopEagle137/Model-Predictive-Control-cpp-python/blob/main/Images/functional_landscape.jpeg?raw=true)
 # Mathematical Model
 
 The mathematical model used in this particular project is a very simple one. we assume a vehicle travelling toward a target position while avoiding a stationary obstacle. The cost function used in this project, however allows for moving obstacles as well. we assume a timestep delta_t = 1. Hence in this problem it follows that, <br />
